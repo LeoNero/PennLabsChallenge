@@ -1,0 +1,32 @@
+{
+  "name": "PennLabsChallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LeoNero/PennLabsChallenge.git",
+  "author": "Leonardo Felipe Nerone <leonardofelipenerone@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon index.js --exec 'eslint . && node'",
+    "start:dev": "env NODE_ENV=development yarn start",
+    "start:production": "env NODE_ENV=production yarn start"
+  },
+  "dependencies": {
+    "bcrypt": "3.0.1",
+    "bluebird": "3.5.2",
+    "body-parser": "1.18.3",
+    "chalk": "2.4.1",
+    "express": "4.16.3",
+    "joi": "13.6.0",
+    "joi-objectid": "2.0.0",
+    "method-override": "3.0.0",
+    "mongoose": "5.2.17",
+    "ramda": "0.25.0"
+  },
+  "devDependencies": {
+    "eslint": "5.6.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "nodemon": "1.18.4"
+  }
+}
